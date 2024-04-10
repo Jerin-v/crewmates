@@ -18,9 +18,9 @@ function App() {
   return (
     <div className='app'>
       <div className='sidebar'>
-        <p>Home</p>
+        <Link to="/"><button className="sideButton"> Home </button></Link>
         <p>Create a Crewmate</p>
-        <p>View Crewmates</p>
+        <Link to="/view"><button className="sideButton"> View Crewmates </button></Link>
       </div>
       <div className='content'>
         {element}
