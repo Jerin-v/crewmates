@@ -2,6 +2,7 @@ import './App.css';
 import { useRoutes } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import ViewCrew from './pages/ViewCrew'
 
 
 
@@ -12,6 +13,10 @@ function App() {
     {
       path: "/",
       element:<HomePage/>
+    },
+    {
+      path: "/view",
+      element:<ViewCrew/>
     }
   ]);
 
