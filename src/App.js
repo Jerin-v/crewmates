@@ -16,11 +16,15 @@ function App() {
   ]);
 
   return (
-    <div>
-      <div className='header'>
-        <h1>Among us</h1>
+    <div className='app'>
+      <div className='sidebar'>
+        <p>Home</p>
+        <p>Create a Crewmate</p>
+        <p>View Crewmates</p>
       </div>
-      {element}
+      <div className='content'>
+        {element}
+      </div>
     </div>
   );
 }
