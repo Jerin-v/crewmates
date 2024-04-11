@@ -1,7 +1,18 @@
 import React, {useState, useEffect} from "react";
-
+import { supabase } from '../client';
 
 const ViewCrew = () => {
+    const [crew, setCrew] = useState([]);
+
+    useEffect(() => {
+        const fetchCrew = async() => {
+            const {data} = await supabase
+                .from('Crew')
+                .select()
+            setCrew(data);
+        }
+        fetchCrew()
+    }, [])
     return (
         <div>
             <h1>View Crewmates</h1>
