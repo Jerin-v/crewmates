@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ViewCrew from './pages/ViewCrew'
+import CreateCrew from './pages/CreateCrew'
 
 
 
@@ -17,6 +18,10 @@ function App() {
     {
       path: "/view",
       element:<ViewCrew/>
+    },
+    {
+      path: "/create",
+      element:<CreateCrew/>
     }
   ]);
 
@@ -24,7 +29,7 @@ function App() {
     <div className='app'>
       <div className='sidebar'>
         <Link to="/"><button className="sideButton"> Home </button></Link>
-        <p>Create a Crewmate</p>
+        <Link to="/create"><button className="sideButton"> Create Crewmate </button></Link>
         <Link to="/view"><button className="sideButton"> View Crewmates </button></Link>
       </div>
       <div className='content'>
