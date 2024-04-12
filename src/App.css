@@ -31,3 +31,11 @@ html, body {
   width: 100%;
   background-color: lightpink;
 }
+
+button {
+  padding-top: 20px;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

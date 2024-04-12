@@ -14,7 +14,7 @@ const ViewCrew = () => {
         fetchCrew()
     }, [])
     return (
-        <div>
+        <div className="viewCrew">
             <h1>View Crewmates</h1>
             <h2>Here is where you can view all of your created crewmates!</h2>
             <div className="card">
